@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Mail, ExternalLink, Code2, Database, Wrench, Terminal, Cpu, FileJson, FileCode } from "lucide-react";
+import { Mail, ExternalLink, Code2, Database, Wrench, Terminal, Cpu, FileJson, FileCode, Atom, Server, Globe, GitBranch, Send } from "lucide-react";
 
 function Github({ size = 20, className }) {
   return (
@@ -36,22 +36,38 @@ const GITHUB_USERNAME = "gagatech-57";
 const SKILLS = {
   Frontend: {
     icon: <Code2 size={18} className="text-indigo-400" />,
-    items: ["HTML5", "CSS3", "JavaScript (ES6+)", "React.js"],
+    items: [
+      { name: "HTML5", icon: <Code2 size={12} /> },
+      { name: "CSS3", icon: <FileCode size={12} /> },
+      { name: "JavaScript (ES6+)", icon: <Terminal size={12} /> },
+      { name: "React.js", icon: <Atom size={12} /> }
+    ],
     accentClass: "border-indigo-500/20 text-indigo-400 bg-indigo-500/5",
   },
   Backend: {
     icon: <Terminal size={18} className="text-cyan-400" />,
-    items: ["Node.js", "Express.js", "REST API"],
+    items: [
+      { name: "Node.js", icon: <Cpu size={12} /> },
+      { name: "Express.js", icon: <Server size={12} /> },
+      { name: "REST API", icon: <Globe size={12} /> }
+    ],
     accentClass: "border-cyan-500/20 text-cyan-400 bg-cyan-500/5",
   },
   Database: {
     icon: <Database size={18} className="text-emerald-400" />,
-    items: ["MongoDB", "MySQL"],
+    items: [
+      { name: "MongoDB", icon: <Database size={12} /> }
+    ],
     accentClass: "border-emerald-500/20 text-emerald-400 bg-emerald-500/5",
   },
   Tools: {
     icon: <Wrench size={18} className="text-violet-400" />,
-    items: ["Git", "GitHub", "VS Code", "Postman"],
+    items: [
+      { name: "Git", icon: <GitBranch size={12} /> },
+      { name: "GitHub", icon: <Github size={12} /> },
+      { name: "VS Code", icon: <Terminal size={12} /> },
+      { name: "Postman", icon: <Send size={12} /> }
+    ],
     accentClass: "border-violet-500/20 text-violet-400 bg-violet-500/5",
   },
 };
@@ -574,10 +590,11 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-2.5">
                   {data.items.map((s) => (
                     <span
-                      key={s}
-                      className={`text-xs font-mono px-3.5 py-1.5 rounded-full border ${data.accentClass} font-medium`}
+                      key={s.name}
+                      className={`inline-flex items-center gap-1.5 text-xs font-mono px-3.5 py-1.5 rounded-full border ${data.accentClass} font-medium`}
                     >
-                      {s}
+                      {s.icon}
+                      {s.name}
                     </span>
                   ))}
                 </div>
