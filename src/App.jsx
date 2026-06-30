@@ -166,7 +166,7 @@ const JOURNEY = [
   {
     year: "2026",
     title: "Full-Stack Graduation & Roles",
-    desc: "Completing B.Sc degree. Seeking MERN developer positions and internships to build commercial systems.",
+    desc: "Completed B.Sc degree. Seeking MERN developer positions and internships to build commercial systems.",
     icon: <Terminal size={16} className="text-violet-400" />,
   },
 ];
@@ -392,7 +392,7 @@ function WorkstationMockup() {
                 name: "GuNaseKaR",
                 role: "MERN Stack Web Developer",
                 education: "B.Sc Computer Science",
-                year: "3rd Year Student",
+                status: "B.Sc Graduate (2026)",
                 hobbies: ["Building Apps", "Problem Solving", "Tech Research"],
               },
               null,
@@ -531,7 +531,7 @@ export default function Portfolio() {
               </h2>
             </div>
             <p className="max-w-xl text-slate-400 leading-relaxed text-base sm:text-lg">
-              B.Sc Computer Science student from Tamil Nadu, India, focused on
+              B.Sc Computer Science graduate from Tamil Nadu, India, focused on
               crafting clean, dynamic, and full-stack solutions with React, Node.js, Express, and MongoDB.
             </p>
             <div className="pt-4 flex flex-wrap gap-4 items-center">
@@ -571,8 +571,8 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-5 gap-10 mt-8">
             <div className="md:col-span-3 text-slate-400 leading-relaxed space-y-5 text-base">
               <p>
-                I'm a passionate self-taught MERN Stack Developer currently pursuing my B.Sc in Computer
-                Science. My journey into web development began with curiosity about how complex
+                I'm a passionate self-taught MERN Stack Developer having recently graduated with a B.Sc in 
+                Computer Science. My journey into web development began with curiosity about how complex
                 systems are wired from end to end.
               </p>
               <p>
@@ -596,8 +596,8 @@ export default function Portfolio() {
                     <span className="text-slate-300 text-right">B.Sc Computer Science</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-slate-800/60">
-                    <span className="text-slate-500">Year</span>
-                    <span className="text-slate-300 text-right">3rd Year</span>
+                    <span className="text-slate-500">Status</span>
+                    <span className="text-slate-300 text-right">Graduate (2026)</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-slate-800/60">
                     <span className="text-slate-500">Location</span>
