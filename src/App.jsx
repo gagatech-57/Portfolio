@@ -389,7 +389,7 @@ function WorkstationMockup() {
           <pre className="text-indigo-300">
             {JSON.stringify(
               {
-                name: "Gunasekar",
+                name: "GuNaseKaR",
                 role: "MERN Stack Web Developer",
                 education: "B.Sc Computer Science",
                 year: "3rd Year Student",
