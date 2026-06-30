@@ -524,7 +524,7 @@ export default function Portfolio() {
                 HI, MY NAME IS
               </p>
               <h1 className="text-5xl sm:text-7xl font-extrabold text-slate-100 tracking-tight leading-[1.1]">
-                Gunasekar.
+                GuNaseKaR.
               </h1>
               <h2 className="text-3xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-slate-400 via-indigo-300 to-cyan-400 leading-tight">
                 I build MERN stack web apps.
@@ -793,7 +793,7 @@ export default function Portfolio() {
         </section>
 
         <footer className="text-center py-8 text-slate-600 text-xs font-mono border-t border-slate-900/60">
-          Designed & Built by Gunasekar — 2026
+          Designed & Built by GuNaseKaR — 2026
         </footer>
       </div>
     </div>
